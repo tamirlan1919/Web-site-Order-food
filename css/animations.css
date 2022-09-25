@@ -1,0 +1,4 @@
+div a:hover{
+	transition-duration: .2s;
+	color: red;
+}

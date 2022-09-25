@@ -1,0 +1,123 @@
+/*positions*/
+.position-abso{
+	position: absolute;
+}
+
+.position-rel{
+	position: relative;
+}
+
+/*Код для создания цветов в блоках*/
+div.white{
+	background-color: white;
+}
+
+div.black{
+	background-color: black;
+}
+
+/*шрифты*/
+div.black *{
+	color: white;
+}
+
+span.big{
+	font-size: 56px;
+	font-weight: 700;
+}
+
+.red{
+	color: #FF5634;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+p.center, h1.center{
+	text-align: center;
+}
+
+div.eighth_block p{
+	margin-top: 14px;
+	margin-bottom: 33px;
+	text-align: left;
+	font-size: 12px;
+	color: gray;
+}
+
+.gray{
+	color: #656565;
+}
+
+.left{
+	float: left;
+}
+
+/*Нижняя полоса под блоком*/
+div.white, div.con_pan{
+	border-bottom: 1px #ababab solid;
+}
+
+/*Кнопки*/
+button.right{
+	float: right;
+}
+
+button.load{
+	background: #FFFFFF;
+	border: 1px solid #EDEDED;
+	box-shadow: 0px 2px 6px rgba(16, 16, 16, 0.04);
+	border-radius: 12px;
+	height: 45px;
+	max-width: 205px;
+	min-width: 40%;
+}
+
+button.reg{
+	background: #FF5634;
+	border: 1px solid #FF5634;
+	border-radius: 12px;
+	height: 45px;
+	max-width: 205px;
+	min-width: 40%;
+	color: white;
+	margin-right: 20px;
+}
+
+div.con_pan button{
+	min-height: 56px;
+}
+
+div.main button{
+	min-height: 73px;
+}
+
+/*Панельки*/
+div.namebar{
+	border: #EDEDED solid 3px;
+	border-radius: 24px;
+	margin-bottom: 28px;
+	padding: 30px;
+}
+
+div.namebar img{
+	margin-right: 10px;
+}
+
+/*Картинки*/
+img.img-35{
+	margin-left: 10px;
+}
+
+/*листы*/
+ul{
+	list-style: none;
+	padding: 0px;
+}
+
+/*Просто для всего*/
+.invisible{
+	display: none;
+}

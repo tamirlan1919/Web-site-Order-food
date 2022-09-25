@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<!-- Название сайта -->
+		<title>
+			Deliver X
+		</title>
+
+		<!-- мета теги -->
+		<meta charset='utf-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- css -->
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/animations.css">
+		<link rel="stylesheet" href="fonts/roboto.css">
+		<link rel="stylesheet" href="css/all_parametrs.css">
+
+		<!-- главная картинка -->
+		<link rel="icon" href="img/8.png">
+
+		<!-- js -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+		<script src='js/wow.js'></script>
+		<script src='js/functions.js'></script>
+	</head>
+	<body>
+		<div class="conn_pan">
+			<div class="con_pan white">
+				<div class='invisible position-abso' id="phone_panel">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<a href="" onclick='invisible_phone_panel()' class='left'>
+									Home
+								</a>
+								<br>
+								<a href="" onclick='invisible_phone_panel()' class='left'>
+									About
+								</a>
+								<br>
+								<a href="" onclick='invisible_phone_panel()' class='left'>
+									Pricing
+								</a>
+								<br>
+								<a href="" onclick='invisible_phone_panel()' class='left'>
+									Pages
+								</a>
+								<br>
+								<a href="" onclick='invisible_phone_panel()' class='left'>
+									Cart(0)
+								</a>
+							</div>
+							<div class="col">
+								<button onclick='invisible_phone_panel()' class='right'>
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+										<path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+									</svg>
+									close
+								</button>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-12 col-xl-12 col-xxl-5">
+							<img src="img/1.png" alt="">
+						</div>
+
+						<!-- Большая панель -->
+						<div class="big_navbar wow shake">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-12 col-xl-6 col-xxl-4">
+								<ul>
+									<li>
+										<a href="" class='red' style='color: red'>
+											Home
+										</a>
+									</li>
+									<li class="active">
+										<a href="">
+											About
+										</a>
+									</li>
+									<li class="active">
+										<a href="">
+											Pricing
+										</a>
+									</li>
+									<li class="active">
+										<a href="">
+											Pages
+										</a>
+									</li>
+									<li class="active">
+										<a href="">
+											Cart(0)
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- Маленькая панель -->
+						<div class="smole_navbar">
+							<button onclick='visible_phone_panel()' class='open'>
+								select
+							</button>
+						</div>
+
+						<div class="col-lg-12 col-md-12 col-sm-12 col-12 col-xl-6 col-xxl-3">
+							<button class='load' onclick='download()'>
+								Download app
+							</button>
+							<button class='reg' onclick='register()'>
+								Register
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="container">
+				<div class="first_block white">
+					<div class="position-abso info">
+						<div class="container">
+							<div class="big-stat">
+								<div class="row">
+									<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+										<span class='big'>
+											10M<span class='red'>+</span>
+										</span>
+									</div>
+									<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+										<span class='big'>
+											500k<span class='red'>+</span>
+										</span>
+									</div>
+									<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+										<span class='big'>
+											30M<span class='red'>+</span>
+										</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+										<span>
+											Happy customers
+										</span>						
+									</div>
+									<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+										<span>
+											Restaurants available
+										</span>						
+									</div>
+									<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+										<span>
+											Successful deliveries
+										</span>									
+									</div>
+								</div>
+							</div>
+							<div class="smole-stat">
+								<div class="row">
+									<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12">
+										<span class='big'>
+											10M<span class='red'>+</span>
+										</span>
+									</div>
+									<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12">
+										<span>
+											Happy customers
+										</span>						
+									</div>
+									<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12">
+										<span class='big'>
+											500k<span class='red'>+</span>
+										</span>
+									</div>
+									<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12">
+										<span>
+											Restaurants available
+										</span>						
+									</div>
+									<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+										<span class='big'>
+											30M<span class='red'>+</span>
+										</span>
+									</div>
+									<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12">
+										<span>
+											Successful deliveries
+										</span>									
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12 col-xl-5 col-xxl-5">
+							<div class="text">
+								<span class='red'>
+									FOOD DELIVERY SERVICE
+								</span>
+								<h1>
+									Delicious food at your fingertips
+								</h1>
+								<p>
+									A ultricies eget condimentum sed faucibus enim maecenas variusd dolor sitegestas hendrerit et maecenas habitant mattis
+								</p>
+								<button class='reg' onclick='register()'>
+									Register restaurant
+								</button>
+								<button class='load' onclick='download()'>
+									Download app
+								</button>
+							</div>
+						</div>
+						<div class="col-lg-12 col-xl-7 col-xxl-7">
+							<div class="wow bounceIn">
+								<img src="img/2.png" alt="This is image is not loadet" id='img-2' class=''>
+							</div>
+						</div>
+					</div>
+					<div class="margin">
+						<div class="row">
+							<div class="col">
+								<p class='center'>
+									Trusted by 5,000+ restaurants around the world
+								</p>
+							</div>
+						</div>
+						<div class="row wow bounceInLeft">
+							<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+								<img src="img/3.png" alt="This is image is not loadet">
+							</div>
+							<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+								<img src="img/4.png" alt="This is image is not loadet">
+							</div>
+							<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+								<img src="img/5.png" alt="This is image is not loadet">
+							</div>
+							<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+								<img src="img/6.png" alt="This is image is not loadet">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="second_block white">
+					<div class="row">
+						<div class="col">
+							<p class='center red'>
+								How it works
+							</p>
+							<h1 class='center'>
+								Our simple, yet efficient 
+								<br>
+								delivery system
+							</h1>
+							<p class='center'>
+								Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu egestas morbi sem vulputate etiam facilisis pellentesque
+							</p>
+						</div>
+					</div>
+					<div class="bigger">
+						<div class="row">
+							<div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
+								
+							</div>
+							<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+								<img src="img/7.png" alt="">
+							</div>
+							<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+								<img src="img/8.png" alt="">
+							</div>
+							<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+								<img src="img/9.png" alt="">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<p class='center'>
+									1. Create a free account at Deliver X today
+								</p>
+							</div>
+							<div class="col">
+								<p class='center'>
+									2. Order from your favorite restaurant
+								</p>
+							</div>
+							<div class="col">
+								<p class='center'>
+									3. Receive right in your house, hassle-free
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="smoller">
+						<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+						  	<div class="carousel-inner">
+						    	<div class="carousel-item active">
+						    		<p class='center'>
+							      		<img src="img/7.png" alt="">						    			
+						    		</p>
+
+						      		<p class='center'>
+										1. Create a free account at Deliver X today
+									</p>
+									<p class='center'>
+										Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
+									</p>
+						    	</div>
+						    	<div class="carousel-item">
+						    		<p class='center'>
+						      			<img src="img/8.png" alt="">
+						      		</p>
+									<p class='center'>
+										2. Order from your favorite restaurant
+									</p>
+									<p class='center'>
+										Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
+									</p>
+						    	</div>
+						    	<div class="carousel-item">
+							    	<p class='center'>
+						      			<img src="img/9.png" alt="">
+						      		</p>
+									<p class='center'>
+										3. Receive right in your house, hassle-free
+									</p>
+									<p class='center'>
+										Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
+									</p>
+						    	</div>
+						  	</div>
+						  	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+						    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    	<span class="visually-hidden">Previous</span>
+						  	</button>
+						  	<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+						    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    	<span class="visually-hidden">Next</span>
+						  	</button>
+						</div>
+					</div>
+					<div class="bigger">
+						<div class="row">
+							<div class="col">
+								<p class='center'>
+									Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
+								</p>
+							</div>
+							<div class="col">
+								<p class='center'>
+									Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
+								</p>
+							</div>
+							<div class="col">
+								<p class='center'>
+									Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<button class='reg' onclick='register()'>
+								Register restaurant
+							</button>
+						</div>
+						<div class="col">
+							<button class='load' onclick='download()'>
+								Download app
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="third_block white">
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+							<h2>
+								Learn why Deliver X is great for your restaurant
+							</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam
+							</p>
+							<div class="container">
+								<div class="row wow bounce">
+									<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mini-info">
+										<img src="img/10.png" alt=""><br>
+										<h4>
+											Fast deliveries
+										</h4>
+										<p>
+											Lorem ipsum dolor sit amet consecte
+										</p>
+									</div>
+									<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mini-info">
+										<img src="img/11.png" alt=""><br>
+										<h4>
+											Certified riders
+										</h4>
+										<p>
+											Lorem ipsum dolor sit amet consecte
+										</p>
+									</div>
+								</div>
+								<div class="row wow bounce">
+									<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mini-info">
+										<img src="img/12.png" alt=""><br>
+										<h4>
+											Instant payments
+										</h4>
+										<p>
+											Lorem ipsum dolor sit amet consecte
+										</p>
+									</div>
+									<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mini-info">
+										<img src="img/13.png" alt=""><br>
+										<h4>
+											Low fees
+										</h4>
+										<p>
+											Lorem ipsum dolor sit amet consecte
+										</p>
+									</div>
+								</div>
+								<div class="row info">
+									<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+										<button class='reg right' onclick='register()'>
+											Register restaurant
+										</button>
+									</div>
+									<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+										<button class='load' onclick='download()'>
+											Download app
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+							<img src="img/14.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fourth_block black wow tada">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 info">
+							<h2>
+								A delicious burger is one tap away!
+							</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam
+							</p>
+							<button class='reg' onclick='download()'>
+								Download app
+							</button>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+							<img src="img/15.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="fifth_block white">
+					<div class="row">
+						<p class="red">
+							Our Features
+						</p>
+						<h2>
+							Learn why Deliver is great for <br> customers too!
+						</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu egestas morbi sem vulputate etiam facilisis pellentesque
+						</p>
+					</div>
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 wow flash">
+							<p>
+							    <img src="img/16.png" alt="">
+							</p>
+							<h4>
+								Express delivery
+							</h4>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.
+							</p>
+						</div>
+						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 wow shake">
+							<p>
+							    <img src="img/17.png" alt="">
+							</p>
+							<h4>
+								Safely delivered
+							</h4>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.
+							</p>
+						</div>
+						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 wow flash">
+							<p>
+							    <img src="img/18.png" alt="">
+							</p>
+							<h4>
+								Special discounts
+							</h4>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.
+							</p>
+						</div>
+						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 wow shake">
+							<p>
+							    <img src="img/19.png" alt="">
+							</p>
+							<h4>
+								More dishes
+							</h4>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.
+							</p>
+						</div>
+						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 wow flash">
+							<p>
+							    <img src="img/20.png" alt="">
+							</p>
+							<h4>
+								Exclusive restaurants
+							</h4>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.
+							</p>
+						</div>
+						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 wow shake">
+							<p>
+							    <img src="img/21.png" alt="">
+							</p>
+							<h4>
+								and much more!
+							</h4>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<button class='reg' onclick='register()'>
+							    Register restaurant
+						    </button>
+						</div>
+						<div class="col">
+							<button class='load' onclick='download()'>
+							    Download app
+						    </button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="sixth_block white">
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 img wow flash">
+							<img src="img/22.png" alt="">
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 img">
+							<h1>
+								Hassle-free restaurant management
+							</h1>
+							<p>
+								Bibendum consectetur eu quis dignissim purus quis felis urna in enim elementum tellus amet ullamcorper ante in sollicitudin sollicitudin pellentesque
+							</p>
+							<img src="img/24.png" alt="" style='float:left'>
+							<h5>
+								Order management
+							</h5>
+							<span>
+								Aliquam vestibulum morbi blandit cursus risus atomol ultrices proin gravida hendrerit lectusa.
+							</span>
+							<br><br><br>
+							<img src="img/25.png" alt="" style='float:left'>
+							<h5>
+								POS integration
+							</h5>
+							<span>
+								Lobortis elementum nibh tellus molestie nunc nonolfu celerisque fermentum dui faucibus inomle.
+							</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6">
+							<h1>
+								Hassle-free restaurant management
+							</h1>
+							<p>
+								Bibendum consectetur eu quis dignissim purus quis felis urna in enim elementum tellus amet ullamcorper ante in sollicitudin sollicitudin pellentesque
+							</p>
+							<img src="img/26.png" alt="" style='float:left'>
+							<h5>
+								Order from app
+							</h5>
+							<span>
+								Aliquam vestibulum morbi blandit cursus risus atomol ultrices proin gravida
+							</span>
+							<br><br><br>
+							<img src="img/27.png" alt="" style='float:left'>
+							<h5>
+								Delivery tracking
+							</h5>
+							<span>
+								Lobortis elementum nibh tellus molestie nunc nonolfu celerisque fermentum dui
+							</span>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 wow flash">
+							<img src="img/23.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="seventh_block white">
+					<div class="row">
+						<div class="col">
+							<h2>
+								What our clients say
+							</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac
+						</div>
+						<div class="col">
+							<button class='reg' onclick='register()'>
+								Register restaurant
+							</button>
+							<button class='load' onclick='download()'>
+								Download app
+							</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 wow bounce">
+							<div class="namebar">
+								<img src="img/28.png" alt="" style='float:left'>
+								<p>
+									John Carter
+								</p>
+								<p class='red'>
+									Echo Park
+								</p>
+								<span>
+									“Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a nunc mauris scelerisque.“
+								</span>
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 wow bounce">
+							<div class="namebar">
+								<img src="img/29.png" alt="" style='float:left'>
+								<p>
+									Sophie Moore
+								</p>
+								<p class='red'>
+									Hollywood Hills
+								</p>
+								<span>
+									“Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a nunc mauris scelerisque.“
+								</span>
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 wow bounce">
+							<div class="namebar">
+								<img src="img/30.png" alt="" style='float:left'>
+								<p>
+									Matt Cannon
+								</p>
+								<p class='red'>
+									Little Tokyo
+								</p>
+								<span>
+									“Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a nunc mauris scelerisque.“
+								</span>
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 wow bounce">
+							<div class="namebar">
+								<img src="img/31.png" alt="" style='float:left'>
+								<p>
+									Lily Woods
+								</p>
+								<p class='red'>
+									Melsore Avenue
+								</p>
+								<span>
+									“Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a nunc mauris scelerisque.“
+								</span>
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 wow bounce">
+							<div class="namebar">
+								<img src="img/32.png" alt="" style='float:left'>
+								<p>
+									Andy Smith
+								</p>
+								<p class='red'>
+									Koreatown
+								</p>
+								<span>
+									“Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a nunc mauris scelerisque.“
+								</span>
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 wow bounce">
+							<div class="namebar">
+								<img src="img/33.png" alt="" style='float:left'>
+								<p>
+									Emily Williams
+								</p>
+								<p class='red'>
+									Chinatown
+								</p>
+								<span>
+									“Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a nunc mauris scelerisque.“
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							
+						</div>
+						<div class="col">
+							<img src="img/35.png" alt="" class='img-35'>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="eighth_block black">
+				<div class="container">
+					<div class="row">
+						<div class="col texts">
+							<h1>
+								Start attracting more client today!
+							</h1>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam neque ultrices.
+							</p>
+							<button class='reg' onclick='register()'>
+								Register restaurant
+							</button>
+						</div>
+						<div class="col">
+							<img src="img/34.png" alt="" class=''>
+						</div>
+					</div>
+					
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="ninth_block white">
+					<div class="row">
+						<div class="col">
+							<img src="img/1.png" alt="">
+							<br>
+							<p class='gray'>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut.
+							</p>
+						</div>
+						<div class="col">
+							<button class="reg">
+								Download for IOS
+							</button>
+							<button class="reg" onclick='download()'>
+								Download for Android
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="tenth_block white">
+					<div class="row">
+						<div class="col-3 col-sm-3 col-md-3 col-xl-3 col-xxl-3">
+							<h5>
+								Menu
+							</h5>
+						</div>
+						<div class="col-3 col-sm-3 col-md-3 col-lg-6 col-xl-3 col-xxl-3">
+							<h5>
+								Utility pages
+							</h5>
+						</div>
+						<div class="col-3 col-sm-3 col-md-3 col-lg-6 col-xl-3 col-xxl-3">
+							<h5>
+								Available in
+							</h5>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="container">
+								<div class="row">
+									<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+										<ul>
+											<a href="">
+												<li class='gray'>
+                                                    Home
+											    </li>
+										    </a>
+											<a href="">
+												<li class='gray'>
+                                                    About
+											    </li>
+											</a>
+											<a href="">
+												<li class='gray'>
+                                                    Contact
+											    </li>
+											</a>
+											<a href="">
+												<li class='gray'>
+                                                    Blog
+											    </li>
+											</a>
+											<a href="">
+												<li class='gray'>
+                                                    Blog posts
+											    </li>
+											</a>
+										</ul>
+									</div>
+									<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+										<ul>
+											<a href="">
+												<li class='gray'>
+													Plans
+											    </li>
+											</a>
+											<a href="">
+												<li class='gray'>
+													Plans single
+											    </li>
+											</a>
+											<a href="">
+												<li class='gray'>
+													Register
+											    </li>
+											</a>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<ul>
+								<a href="">
+									<li class='gray'>
+										Start here
+									</li>
+								</a>
+								<a href="">
+									<li class='gray'>
+										Styleguide
+									</li>
+								</a>
+								<a href="">
+									<li class='gray'>
+										Password protected
+									</li>
+								</a>
+								<a href="">
+									<li class='gray'>
+										404 Not found
+									</li>
+								</a>
+								<a href="">
+									<li class='gray'>
+										Licenses
+									</li>
+								</a>
+								<a href="">
+									<li class='gray'>
+										Changelog
+									</li>
+								</a>
+							</ul>
+						</div>
+						<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+							<img src="img/36.png" alt=""><span>San-francisco, CA</span>
+							<br>
+							<img src="img/38.png" alt=""><span>Los Angeles, CA</span>
+						</div>
+						<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+							<div class="col">
+							<img src="img/37.png" alt=""><span>New York, NY</span>
+							<br>
+							<img src="img/39.png" alt=""><span>Seattle, WA</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p class='gray'>Copyright © Deliver X | Designed by <span class='red'>BRIX Templates</span> - Powered by <span class='red'>Webflow</span></p>
+		</div>
+		<script src='js/functions.js'></script>
+        <script src="js/wow.min.js"></script>
+		<script>
+		new WOW().init();
+		</script>
+	</body>
+</html>
+
+
+

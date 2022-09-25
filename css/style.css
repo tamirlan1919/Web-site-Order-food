@@ -1,0 +1,290 @@
+html{
+	width: 100%;
+	overflow-x: hidden;
+}
+
+div{
+	overflow-x: hidden;
+}
+
+/*Навигационая панель*/
+div.conn_pan{
+	opacity: 0.8;
+	padding-bottom: 32px;
+	position: sticky;
+	top: 0px;
+	z-index: 9999;
+}
+
+div.con_pan ul{
+	display: flex;
+	list-style: none;
+}
+
+div.con_pan ul li.active{
+	margin-left: 20px;
+}
+
+button.open{
+	border: solid red 1px;
+	background-color: #232323;
+	color: white;
+	border-radius: 16px;
+	width: 246px;
+}
+
+#phone_panel{
+	background-color: #232323;
+	width: 100%;
+	height: 265px;
+	position: fixed;
+	top: 0px;
+	z-index: 9999;
+	border-bottom: solid lightblue 3px;
+	padding-top: 75px;
+}
+
+#phone_panel *{
+	color: white;
+}
+
+#phone_panel button{
+	border: solid red 1px;
+	background-color: #232323;
+}
+
+/*Первый блок*/
+div.first_block{
+	min-height: 1200px;
+}
+
+div.first_block div.text{
+	margin-top: 163px;
+	padding-bottom: 60px;
+	border-bottom: 1px #ababab solid;
+}
+
+div.first_block div.info{
+	margin-top: 658px;
+}
+
+div.first_block div.margin{
+	margin-top: 140px;
+	padding-bottom: 140px;
+} 
+
+/*Второй блок*/
+div.second_block{
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+div.second_block button.reg{
+	float: right;
+}
+
+/*Третий блок*/
+div.third_block{
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+div.third_block .mini-info{
+	padding-bottom: 100px;
+}
+
+div.third_block div.info{
+	padding-bottom: 20px;
+}
+
+/*Четвёртый блок*/
+div.fourth_block .info{
+	padding-top: 270px;
+	padding-bottom: 20px;
+}
+
+div.fourth_block .info p{
+	padding-top: 16px;
+	padding-bottom: 27px;
+}
+
+/*Пятый блок*/
+div.fifth_block{
+	padding-bottom: 400px;
+	padding-top: 200px;
+	border: none;
+}
+
+div.fifth_block button.reg{
+	float: right;
+}
+
+div.fifth_block h4, p, img, h2{
+	text-align: center;
+}
+
+/*Шестой блок*/
+div.sixth_block div.img{
+	margin-bottom: 120px;
+}
+
+div.sixth_block h1{
+	margin-top: 147px;
+}
+
+/*Седьмой блок*/
+div.seventh_block button{
+	margin-bottom: 48px;
+}
+
+div.main div.seventh_block{
+	border: none;
+}
+
+div.seventh_block p{
+	text-align: left;
+}
+
+div.seventh_block{
+	padding-top: 200px;
+}
+
+/*Восьмой блок*/
+div.eighth_block{
+	min-height: 680px;
+}
+
+div.eighth_block .texts{
+	margin-top: 200px;
+}
+
+/*Девятый блок*/
+div.ninth_block{
+	padding: 60px 0px 80px 0px;
+}
+
+/*Десятый блок*/
+div.tenth_block{
+	padding: 100px 0px 100px 0px;
+}
+
+/*Нижняя  панель*/
+div.footer{
+	padding: 30px 0px 30px 0px;
+}
+
+/*Медиа запросы*/
+
+@media(min-width: 1201px){
+	.smole-stat{
+		display: none;
+		position: absolute;
+	}
+	.big-stat{
+		display: block;
+		position: static;
+	}
+	.smoller{
+		display: none;
+		position: absolute;
+	}
+	.bigger{
+		display: block;
+		position: static;
+	}
+}
+
+@media(max-width: 1400px){
+	.smole-stat{
+		display: block;
+		position: static;
+	}
+	.big-stat{
+		display: none;
+		position: absolute;	
+	}
+}
+
+@media(max-width: 1200px){
+	.smole-stat{
+		display: block;
+		position: static;
+	}
+	.big-stat{
+		display: none;
+		position: absolute;	
+	}
+
+	div.first_block div.info{
+		margin-top: 1400px;
+	}
+	.smole-stat{
+		display: none;
+		position: absolute;
+	}
+	.big-stat{
+		display: block;
+		position: static;
+	}
+	div.first_block div.margin{
+		margin-top: 350px;
+	}
+	.smoller{
+		display: block;
+		position: static;
+	}
+	.bigger{
+		display: none;
+		position: absolute;
+	}
+}
+
+@media(max-width: 800px){
+	#img-2{
+		width: 400px;
+		float:right;
+	}
+	div.first_block div.info{
+		margin-top: 1000px;
+	}
+	div.first_block div.margin{
+		margin-top: 250px;
+	}
+	*{
+	text-align: center;
+	}
+}
+div.big_navbar{
+	display: block;
+}
+div.smole_navbar{
+	display: none;
+}
+@media(max-width: 500px){
+	.smole-stat{
+		display: block;
+		position: static;
+
+	}
+	.big-stat{
+		display: none;
+		position: absolute;
+	}
+	div.first_block div.margin{
+		margin-top: 550px;
+	}
+	div.big_navbar{
+		display: none;
+	}
+	div.smole_navbar{
+		display: block;
+		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+}
+
+@media(max-width: 1200px){
+	div.sixth_block *{
+		text-align: center;
+	}
+}
